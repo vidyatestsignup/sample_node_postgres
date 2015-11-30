@@ -15,6 +15,9 @@ before_script:
   - mkdir -p shippable/codecoverage
   - psql -c 'CREATE DATABASE app_test;' -U postgres
 
+
+archive: true
+ 
 script:
   - npm test
 
